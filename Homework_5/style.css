@@ -1,0 +1,25 @@
+body{
+    background-image:url(https://github.com/Xi-Jin/puilab/blob/master/Homework_5/assets/home-backgrond.png?raw=true);
+    background-position: center;
+    width: 1024px;
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    width:1024px;
+}
+
+h1{
+    text-shadow: 10px 0px 10px rgba(0,0,0,.3);
+    color: white;
+    font-size: 40px;
+    font-style: bold;
+}
+
+#homepage_button{
+    text-decoration: underline;
+    color:white;
+    font-size: 15px;
+    text-shadow: 10px 0px 10px rgba(0,0,0,.3);
+    font-style: medium;
+}
