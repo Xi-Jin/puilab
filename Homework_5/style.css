@@ -1,7 +1,9 @@
 body{
+    background-color: rgb(62,77,88);
     background-image:url(https://github.com/Xi-Jin/puilab/blob/master/Homework_5/assets/home-backgrond.png?raw=true);
     background-position: center;
-    width: 1024px;
+    background-repeat: no-repeat;
+    width: 100%;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -14,6 +16,8 @@ h1{
     color: white;
     font-size: 40px;
     font-style: bold;
+    width: 1024px;
+    text-align: center;
 }
 
 #homepage_button{
