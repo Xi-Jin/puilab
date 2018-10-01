@@ -1,3 +1,14 @@
+/* header same in all pages */
+header{
+    width:100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items:center;
+}
+
+/* homepage styling */
 body{
     background-color: rgb(62,77,88);
     background-image:url(https://github.com/Xi-Jin/puilab/blob/master/Homework_5/assets/home-backgrond.png?raw=true);
@@ -7,23 +18,32 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
-header{
-    width:1024px;
+#header_placeholder{
+    width:90%;
 }
 
-h1{
+#title{
+    width:100%;
     text-shadow: 10px 0px 10px rgba(0,0,0,.3);
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-style: bold;
-    width: 1024px;
     text-align: center;
+    position:relative;
+    top: 90px;
 }
 
 #homepage_button{
     text-decoration: underline;
     color:white;
-    font-size: 15px;
+    font-size: 30px;
     text-shadow: 10px 0px 10px rgba(0,0,0,.3);
     font-style: medium;
+    text-align: center;
+    position: relative;
+    top:40px;
+
+/* product browsing page styling */
+
+
 }
