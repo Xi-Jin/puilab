@@ -44,6 +44,6 @@ body{
     top:40px;
 
 /* product browsing page styling */
-
-
+#detail_page{
+    background-color: white;
 }
