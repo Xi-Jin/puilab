@@ -45,7 +45,7 @@ body{
     top: 170px;
 }
 
-#homepage_button{
+.homepage_button{
     text-decoration: underline;
     color:white;
     font-size: 30px;
@@ -55,8 +55,12 @@ body{
     top:190px;
 }
 
+#homepage_button_text{
+    color:white;
+}
 a{
-    color: white;
+    color: black;
+    text-decoration: none;
 }
 /* product browsing page styling */
 .detail_page{
