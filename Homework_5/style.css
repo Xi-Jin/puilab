@@ -1,36 +1,48 @@
 /* header same in all pages */
-header{
-    width:100%;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items:center;
+.header{
+    position:fixed;
+    top:0;
+    width: 100%;
+    overflow: hidden;
 }
 
-/* homepage styling */
 body{
-    background-color: rgb(62,77,88);
-    background-image:url(https://github.com/Xi-Jin/puilab/blob/master/Homework_5/assets/home-backgrond.png?raw=true);
+    background-color: white;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     font-family: 'Oswald', sans-serif;
+    padding:0;
+    margin:0px;
 }
 
-#header_placeholder{
-    width:90%;
+.menu_button{
+    margin-left: 40px;
+    float: left;
+    padding-top: 64.5px;
 }
+
+.shopping_cart{
+    float: right;
+    margin-right: 50px;
+    padding-top: 50.5px;
+}
+
+/* homepage styling */
+.homepage{
+    background-image:url(https://github.com/Xi-Jin/puilab/blob/master/Homework_5/assets/home-backgrond.png?raw=true);
+}
+
 
 #title{
     width:100%;
     text-shadow: 10px 0px 10px rgba(0,0,0,.3);
     color: white;
     font-size: 50px;
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
     position:relative;
-    top: 90px;
+    top: 170px;
 }
 
 #homepage_button{
@@ -38,12 +50,115 @@ body{
     color:white;
     font-size: 30px;
     text-shadow: 10px 0px 10px rgba(0,0,0,.3);
-    font-style: medium;
     text-align: center;
     position: relative;
-    top:40px;
+    top:190px;
+}
 
+a{
+    color: white;
+}
 /* product browsing page styling */
-#detail_page{
+.detail_page{
     background-color: white;
+}
+.detail_page_header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: white;
+    height: 150px;
+    display: inline;
+    vertical-align: center;
+}
+.black_logo{
+    padding-left: 40px;
+    float:left;
+    vertical-align: center;
+    padding-top: 36.5px;
+    text-shadow: 10px 0px 10px rgba(0,0,0,.3)
+}
+
+.thumb_nails{
+    height:60%;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: -1;
+    top: 150px;
+}
+.thumb_nail_img{
+    width:33.33%;
+    height: 361px;
+}
+
+.blueberry_button{
+    position: relative;
+    top:0;
+    left: 0;
+    height: 362px;
+}
+
+/*product detail page*/
+
+.product_body{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    z-index: -1;
+    display: flex;
+
+}
+
+#product_image{
+    width: 70%;
+}
+
+#product_text{
+    width:200px;
+    margin-left: 40px;
+}
+
+#indredient_button{
+    border: 2px solid black;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 8pt;
+}
+
+span{
+    font-size: 8pt;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 208px;
+    margin-bottom: 15px;
+}
+
+.product_option{
+    width: 90px;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 8px;
+    margin-right: 4px;
+    font-size: 10pt;
+}
+
+#drop_down{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 70%;
+}
+
+.add_cart_button{
+    border: 2px solid black;
+    background-color: #D8D8D8;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
 }
