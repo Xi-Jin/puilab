@@ -70,6 +70,7 @@ a{
     height: 150px;
     display: inline;
     vertical-align: center;
+    z-index: 2;
 }
 .black_logo{
     padding-left: 40px;
@@ -162,3 +163,20 @@ span{
     padding-bottom: 5px;
     margin-top: 15px;
 }
+
+/*about us page*/
+.about_us_body{
+    display: flex;
+    background-color: #D8D8D8;
+    z-index: -1;
+}
+
+.about_us_text{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    margin-top: 30px;
+    margin-right: 150px;
+
+}
+
