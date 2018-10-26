@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <title>Bun Bun Bake Shop - Blueberry Bun</title>
+    <meta charset="utf-8">
+    <!-- styles -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="bunbunbakeshop.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans%7COswald" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img class="menu_button" src="assets/menu_button.png" alt="menu button">
+        <a href="index.html"><img class="black_logo" src="assets/bun_bun_bake_shop_white.png" alt="logo"></a>
+        <img class="shopping_cart" src="assets/shopping_cart_b.png" alt="shopping cart">
+    </header>
+    <div class="product_body">
+        <img id="product_image" src="assets/blueberry.png" alt="Blueberry Bun">
+        <div id="product_text">
+            <a href="producy_page.html" class="back"><h3> &#60; BACK </h3></a>
+            <div class="item_name">BLUEBERRY</div>
+            <div><p id="price">$2.00/each</p></div>
+            <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p></div>
+            <div id="indredient_button">INGREDIENTS</div>
+            <form>
+                <fieldset>
+                    <label for="glazing">GLAZING <span>(pick one)</span></label>
+                    <div class="buttons">
+                        <div class="product_option" id="none">None</div>
+                        <div class="product_option" id="sugar_milk">Sugar Milk</div>
+                        <div class="product_option" id="vanilla_milk">Vanilla Milk</div>
+                        <div class="product_option" id="double_choco">Double Choco</div>
+                    </div>
+                    <label for="quantity">HOW MANY...</label><br>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                        </select>
+                </fieldset>
+            </form>
+            <div class="add_cart_button">Add To Cart</div>
+        </div>
+    </div>
+
+</body>
