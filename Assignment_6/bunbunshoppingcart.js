@@ -106,6 +106,7 @@ $(document).ready(function(){
             // REMOVE ROW
             $(`[data-roll-pid="${pid}"]`).remove();
         }
+        document.getElementById("dot_text").innerHTML = shoppingCart.length;
     });
 
 
