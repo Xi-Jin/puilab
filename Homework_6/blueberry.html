@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <!-- styles -->
       <link rel="stylesheet" type="text/css" href="style.css">
-      <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="bunbunbakeshop.js"></script>
@@ -16,7 +15,10 @@
     <header class="header">
         <img class="menu_button" src="assets/menu_button.png" alt="menu button">
         <a href="index.html"><img class="black_logo" src="assets/bun_bun_bake_shop_white.png" alt="logo"></a>
-        <img class="shopping_cart" src="assets/shopping_cart_b.png" alt="shopping cart">
+        <div id="shoppingcart_cart_grop">
+        	<div id="dot"><p id='dot_text'>0</p></div>
+        	<a href="shoppingcart.html"><img class="shopping_cart" src="assets/shopping_cart_b.png" alt="shopping cart"></a>
+        </div>
     </header>
     <div class="product_body">
         <img id="product_image" src="assets/blueberry.png" alt="Blueberry Bun">
@@ -36,7 +38,7 @@
                         <div class="product_option" id="double_choco">Double Choco</div>
                     </div>
                     <label for="quantity">HOW MANY...</label><br>
-                        <select name="quantity" id="quantity">
+                        <select id="qty">
                             <option value="1">1</option>
                             <option value="3">3</option>
                             <option value="6">6</option>

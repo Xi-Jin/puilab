@@ -7,6 +7,7 @@
     <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="bunbunbakeshop.js"></script>
+    <script src="bunbunshoppingcart.js"></script>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans%7COswald" rel="stylesheet">
 </head>
@@ -15,7 +16,9 @@
     <div class="detail_page_header">
         <img class="menu_button"  src="assets/menu_black.png" alt="menu button">
         <a href="index.html"><img class="black_logo" src="assets/logo_black.png" alt="logo"></a>
-        <img class="shopping_cart" src="assets/shopping_cart_b.png" alt="shopping cart">
+        <div id="dot"><p id='dot_text'>0</p></div>
+            <a href="shoppingcart.html"><img class="shopping_cart" src="assets/shopping_cart_b.png" alt="shopping cart"></a>
+        </div>    
     </div>
     <div class="grey_body">
         <div class="white_area">
@@ -23,7 +26,7 @@
             <div class="title">
                 <h1 class="order_summary">Order Summary</h1>
             </div>
-            <div id="feedback">
+            <div class="title">
                 <table id="table">
                     <tr>
                         <th></th>
@@ -31,8 +34,21 @@
                         <th>Glazing</th>
                         <th>Quantity</th>
                         <th>Price</th>
+                        <th></th>
                     </tr>
+<!--                     <tr>
+                        <td id="shopping_cart_img" ><img id="shopping_img" src="assets/blueberry.png"></td>
+                        <td>Blueberry</td>
+                        <td>None</td>
+                        <td>3</td>
+                        <td id="shopping_price">6.00</td>
+                    </tr> -->
                 </table>
+            </div>
+            <hr>
+            <div class="total_money">
+                <h3>Total:</h3>
+                <h3 id="total_price">0.00</h3>
             </div>
         </div>
     </div>
