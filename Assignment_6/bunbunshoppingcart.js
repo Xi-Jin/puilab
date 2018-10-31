@@ -50,15 +50,6 @@ $(document).ready(function(){
         document.getElementById("dot_text").innerHTML = shoppingCart.length;
     }
 
-    // function countItems(shoppingCart){
-    //     var itemNumber = 0;
-    //     for (var i = shoppingCart.length - 1; i >= 0; i--) {
-    //         itemNumber ++;
-    //         //console.log(itemNumber);
-    //     }
-    //     console.log(shoppingCart);
-    // }
-
 
     function updateTotalPrice(price){
         var totalPrice = 0.00;
@@ -71,28 +62,6 @@ $(document).ready(function(){
     }
 
     //removing items
-    /*
-    $('#remove_item').click(function(){
-        // console.log(shoppingCart);https://stackoverflow.com/questions/15097634/how-to-change-the-attr-and-id-of-a-button-after-clicking-using-jquery
-        $(this).parent().attr('id','removed');
-        //find removed line index from table
-        var tableRow = document.getElementsByTagName("tr");
-        var removeRow;
-        for (var i = 0; i < shoppingCart.length ; i++) {
-            console.log(i);
-            
-            if ($('[id]')=="removed"){
-            removeRow = i;
-            // test
-            console.log(removeRow);
-            }
-        }
-        // remove(removeRow);
-        // updateStorage(shoppingCart);
-        // updateTotalPrice(price);
-    });
-    */
-
     $("[data-tag='remove_item']").click(function(e) {
         console.log('REMOVE ITEM CLICKED');
         console.log($(this).attr('data-pid'));
@@ -109,41 +78,9 @@ $(document).ready(function(){
         document.getElementById("dot_text").innerHTML = shoppingCart.length;
     });
 
-
-    function remove(index){
-        shoppingCart.splice(index,1);
     }
 
     function updateStorage(shoppingCart){
         localStorage.setItem("localStored", JSON.stringify(shoppingCart));
-        /*
-        if (shoppingCart == null){
-            itemNumber = 0;
-            $('#table').text('There is nothing in your cart.')
-            $('.total_money').css('display','none');
-            $('#total_price').css('display','none');
-        } else {
-            for (var i = shoppingCart.length - 1; i >= 0; i--) {
-                d.push(shoppingCart[i]);
-                localStorage.setItem("localStored", JSON.stringify(d));
-                } 
-        }
-                        */
-    }
-    // function updateStorage(shoppingCart){
-    //     var d = JSON.parse(localStorage.getItem("localStored"));
-    //     for (var i = shoppingCart.length - 1; i >= 0; i--) {
-    //         if（shoppingCart == null) {
-    //             shoppingCart[i].push(objToSave);
-    //             localStorage.setItem("localStored", JSON.stringify(shoppingCart));
-    //         } else {
-    //             d.push(objToSave);
-    //             localStorage.setItem("localStored", JSON.stringify(d));
-    //         }
-    //     }
-    // }
-        
-        //localStorage.removeItem($(this));
-        //updateCart(img,item,glazing,quantity,price,x);
-        //updateTotalPrice(price);
+
 });
