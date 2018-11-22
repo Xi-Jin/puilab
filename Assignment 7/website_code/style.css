@@ -175,12 +175,14 @@ h4{
 .tracker{
 	display: inline-block;
 	white-space: nowrap;
+	font-weight: 600;
 }
 
 .tracker_end{
 	display: inline-block;
 	color: #c8c8c8;
 	white-space: nowrap;
+	font-weight: 400;
 }
 
 /*maps*/
