@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Lost In Iceland</title>
+    <meta charset="utf-8">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- script -->
+    <script src="main.js"></script>
+    <!-- parallax https://www.w3schools.com/howto/howto_css_parallax.asp -->
+    <!-- map -->
+
+</head>
+
+<body>
+<!-- Container element -->
+  <div class="parallax">
+    <div class="top_bar">
+      <h4>Lost in Iceland</h4>
+    </div>
+    <div class="slide_content" id="cover">
+      <div id="cover_text">
+        <h1>Lost In<br>ICELAND</h1>
+        <h3>a 6-day road trip around Iceland</h3>
+        <p id="scroll_text">Scroll To Explore</p>
+        <img src="assets/1-arrow.png">
+      </div>
+    </div>
+    <div class="slide_content_map" id ="main_map">
+      <div class="Whole_map_in_grid">
+        <div id="whole_map">
+          <img src="https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/static/-18.66951,65.24622,5.5,0,0/890x716?access_token=pk.eyJ1IjoiYnJpbGxpYW50a2luIiwiYSI6ImNqb251ZGd6ZDBnOGozcW4xcTlibWVxNjIifQ.qEtt5skJyTsCOpGb3e1rZA" alt="Iceland Map">
+          <div id="whole_route"></div>
+        </div>
+      </div>
+      <div id="map_caption">
+        <h3>Route #1</h3>
+        <p>Þjóðvegur 1</p>
+        <div class="white_bar"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+      </div>
+    </div>
+    <div class="slide_content"  id="rekjavik">
+      <div class="vertical_bar">
+        <div class="blue_bar"></div>
+        <div class="blue_arrow"></div>
+        <span class="tracker">0 mi</span>
+        <!-- <span class="tracker_end">/971 mi</span> -->
+      </div>
+      <div class="page_content">
+        <div class="page_content_left">
+          <img id="church" src="assets/3-rek.png">
+        </div>
+        <div class="page_content_right">
+          <H3>The Origin: Reykjavík</H3>
+          <div class="white_bar"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+          <div class="light_box">
+            <!-- pics? -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide_content" id="map_rek_vik">
+      <div class="vertical_bar">
+        <div class="blue_arrow">
+          <p>132 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="road_map">
+        <dir id="rek_vik_line"></dir>
+      </div>
+    </div>
+    <div class="slide_content" id="vik">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>132 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="page_content">
+        <div class="page_content_left">
+          <div class="route_animation">
+            <!-- <img> route line -->
+          </div>
+          <div class="itinery_box">
+            <p class="bold_p">Day 2</p>
+            <p>Milleage: 132 miles (212km)<br>
+              Driving Time: 3h 32min<br>
+              Sites to see: 4 </p> 
+          </div>
+        </div>
+        <div class="page_content_right">
+          <p class="bold_p">Reykjavík to Vík</p>
+          <h3>Towards the Black Beach</h3>
+          <div class="white_bar"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <!-- video -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+          <!-- pictures -->
+        </div>
+      </div>
+    </div>
+    <div class="slide_content" id="map_vik_hof">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>303 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="road_map" id="vik_hof">
+        <dir id="vik_hof_line"></dir>
+      </div>
+    </div>
+    <div class="slide_content" id="hof">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>303 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="page_content">
+        <div class="page_content_left">
+          <div class="route_animation">
+            <!-- <img> route line -->
+          </div>
+          <div class="itinery_box">
+            <p class="bold_p">Day 3</p>
+            <p>Milleage: 171 miles (276km)<br>
+              Driving Time: 3h 15min<br>
+              Sites to see: 3 </p> 
+          </div>
+        </div>
+        <div class="page_content_right">
+          <p class="bold_p">Vík to Höfn</p>
+          <h3>The Warmest Coast</h3>
+          <div class="white_bar"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <!-- video -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+          <!-- pictures -->
+        </div>
+      </div>
+    </div>
+    <div class="slide_content" id="map_hof_be">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>500 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="road_map" id="hof_be">
+        <dir id="hof_be_line"></dir>
+      </div>
+    </div>
+    <div class="slide_content" id="be">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>500 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="page_content">
+        <div class="page_content_left">
+          <div class="route_animation">
+            <!-- <img> route line -->
+          </div>
+          <div class="itinery_box">
+            <p class="bold_p">Day 4</p>
+            <p>Milleage: 197 miles (317km)<br>
+              Driving Time: 4h<br>
+              Sites to see: 0 </p> 
+          </div>
+        </div>
+        <div class="page_content_right">
+          <p class="bold_p">Höfn to Borgarfjörður Eystri</p>
+          <h3>From Summer To Winter</h3>
+          <div class="white_bar"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <!-- video -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+          <!-- pictures -->
+        </div>
+      </div>
+    </div>
+    <d iv class="slide_content" id="map_be_ak">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>731 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="road_map" id="rek_ak">
+        <dir id="hof_be_line"></dir>
+      </div>
+    </div>
+    <div class="slide_content" id="ak">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>731 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="page_content">
+        <div class="page_content_left">
+          <div class="route_animation">
+            <!-- <img> route line -->
+          </div>
+          <div class="itinery_box">
+            <p class="bold_p">Day 5</p>
+            <p>Milleage: 231 miles (372km)<br>
+              Driving Time: 5h 2min<br>
+              Sites to see: 3 </p> 
+          </div>
+        </div>
+        <div class="page_content_right">
+          <p class="bold_p">Borgarfjörður Eystri to Akureyri</p>
+          <h3>The Earth Is Alive</h3>
+          <div class="white_bar"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <!-- video -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+          <!-- pictures -->
+        </div>
+      </div>
+    </div>
+    <div class="slide_content" id="map_ak_rek">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>971 miles</p>
+        </div>
+        <p>/971 miles</p>
+      </div>
+      <div class="road_map" id="ak_rek">
+        <dir id="ak_rek_line"></dir>
+      </div>
+    </div>
+    <div class="slide_content" id="rek">
+      <div class="vertical_bar">
+        <div class="bl_arrow">
+          <p>971 miles</p>
+        </div>
+        <p>971 miles</p>
+      </div>
+      <div class="page_content">
+        <div class="page_content_left">
+          <div class="route_animation">
+            <!-- <img> route line -->
+          </div>
+          <div class="itinery_box">
+            <p class="bold_p">Day 6</p>
+            <p>Milleage: 240 miles (386km)<br>
+              Driving Time: 4h 44min<br>
+              Sites to see: 0 </p> 
+          </div>
+        </div>
+        <div class="page_content_right">
+          <p class="bold_p">Akureyri To Reykjavík</p>
+          <h3>The Coldest Ride</h3>
+          <div class="white_bar"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <!-- video -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+          <!-- pictures -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!--     <div class="row" id="homePageContainer">
+	   <div class="col-lg-12" id="homePageBG"><img  class="img-fluid" alt="Responsive image" id="BG" src="assets/1-background.png"></div>
+	   <div class="col-lg-12" id="homePageContent">
+           <h1>Lost In<br>ICELAND</h1>
+           <h3>a 5-day road trip around Iceland</h3>
+           <p  id="scroll_text">Scroll To Explore</p>
+           <img src="assets/1-arrow.png">
+       </div>
+    </div> -->
+
+    <!--Calling the Skrollr Library https://github.com/Prinzhorn/skrollr-->
+<!--     <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+    </script>  -->
+</body>
