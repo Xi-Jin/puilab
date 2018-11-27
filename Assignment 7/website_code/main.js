@@ -1,6 +1,7 @@
 // on delay scroll https://codepen.io/mikun/pen/wJBeRK
 
 // When the user scrolls the page, execute myFunction 
+ // light box
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
@@ -37,3 +38,10 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+var s = skrollr.init({
+	render: function(data) {
+	  //Log the current scroll position.
+	  // $('#info').text(data.curTop);
+	}
+});
