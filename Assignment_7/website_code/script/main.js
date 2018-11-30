@@ -100,12 +100,12 @@ map1.on('load', function() {
     center: [-20.44397, 64.06333]
 });
 
-var frameCount2 = 5;
+var frameCount2 = 36;
 var currentImage2 = 0;
 
 function getPath2() {
-    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment%207/website_code/assets/gif/rek2vik/rek-to-vik_0000_Layer-35.png";
-}
+    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment%207/website_code/assets/gif/rek2vik/"+currentImage2+".png";
+}    
 
 map2.on('load', function() {
 

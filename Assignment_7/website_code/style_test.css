@@ -83,6 +83,12 @@ h4{
 #Whole_map_in_grid{
 	grid-area: r;
 	grid-row: span 10;
+	height: 716px;
+	width: 800px;
+}
+
+#whole_map{
+	width: 100%;
 }
 
 #map_caption{
@@ -110,6 +116,10 @@ h4{
 	grid-row: repeate(11,1fr);
 	grid-template-areas: 
 		"a a a a b b b b b b b"
+}
+
+#rek_vik_line{
+	margin: 0;
 }
 
 .page_content_left{
@@ -189,8 +199,34 @@ h4{
 .itinery_box{
 	position: relative;
 	margin-left: 20%;
-	top: 70%;
+	top: 50%;
 	white-space: nowrap;
+}
+
+.thumbnailRoute{
+	width: 250px;
+	margin: auto;
+}
+
+#itinery_box_be{
+	top: 35%;
+}
+
+#thumbnailRouteBe{
+	width: 150px;
+	margin-bottom: 20px;
+}
+
+#thumbnailRouteAk{
+	width: 330px;
+}
+
+#itinery_box_rek{
+	top:35%;
+}
+
+#thumbnailRouteRek{
+	width: 300px;
 }
 
 /*skr*/
@@ -201,28 +237,32 @@ h4{
 /*page content*/
 .page_content_left{
 	width: 450px;
+
 }
 /*maps*/
 
 #map_rek_vik{
-	background-image: url(https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/static/-20.44397,64.06333,7.0,0,0/1280x716?access_token=pk.eyJ1IjoiYnJpbGxpYW50a2luIiwiYSI6ImNqb251ZGd6ZDBnOGozcW4xcTlibWVxNjIifQ.qEtt5skJyTsCOpGb3e1rZA);
+	width:100%;
+	display:block;
 }
-
 
 #map_vik_hof{
-	background-image: url(https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/static/-17.21231,64.12516,7.0,0,0/1280x716?access_token=pk.eyJ1IjoiYnJpbGxpYW50a2luIiwiYSI6ImNqb251ZGd6ZDBnOGozcW4xcTlibWVxNjIifQ.qEtt5skJyTsCOpGb3e1rZA)
+	width:100%;
+	display:block;
 }
-
 #map_hof_be{
-	background-image: url(https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/static/-13.64512,64.94192,7.0,0,0/1280x716?access_token=pk.eyJ1IjoiYnJpbGxpYW50a2luIiwiYSI6ImNqb251ZGd6ZDBnOGozcW4xcTlibWVxNjIifQ.qEtt5skJyTsCOpGb3e1rZA);
+	width: 100%;
+	display:block;
 }
 
 #map_be_ak{
-	background-image: url(https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/static/-16.39383,65.62130,7.0,0,0/1280x716?access_token=pk.eyJ1IjoiYnJpbGxpYW50a2luIiwiYSI6ImNqb251ZGd6ZDBnOGozcW4xcTlibWVxNjIifQ.qEtt5skJyTsCOpGb3e1rZA);
+	width: 100%;
+	display:block;
 }
 
 #map_ak_rek{
-	background-image: url(https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v10/static/-20.22400,64.97565,6.8,0,0/1280x716?access_token=pk.eyJ1IjoiYnJpbGxpYW50a2luIiwiYSI6ImNqb251ZGd6ZDBnOGozcW4xcTlibWVxNjIifQ.qEtt5skJyTsCOpGb3e1rZA);
+	width: 100%;
+	display:block;
 }
 
 /*BG*/
@@ -434,3 +474,5 @@ img.hover-shadow {
 	position: absolute;
 	z-index: 1;
 }
+
+/*itinerary box*/
