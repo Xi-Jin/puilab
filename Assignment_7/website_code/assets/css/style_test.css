@@ -112,16 +112,16 @@ h4{
 @media(max-width: 800px){
 	.slide_content_map{
 		display: inline-flex;
+		background: 
 	}
-	.slide_content{
-		background-size: cover;
-		display: inline-flex;
+	#Whole_map_in_grid{
+		display:none;
 	}
-	.vertical_bar{
+	#whole_map{
 		display: none;
 	}
-	.page_content_left{
-		display: none;
+	#map_caption{
+		padding-left: 20px;
 	}
 }
 
@@ -191,9 +191,12 @@ h4{
 	height: 100%;
 }
 
-@media(max-width: 1080px){
+@media(max-width: 800px){
 	.vertical_bar_top{
 		display:none;
+	}
+	.whole_map{
+		display: none;
 	}
 }
 
@@ -286,6 +289,19 @@ h4{
 
 .right_asset{
 	width: 90%;
+}
+
+@media(max-width: 1080px){
+/*	.slide_content{
+		background-size: cover;
+		display: inline-flex;
+	}*/
+	.vertical_bar{
+		display: none;
+	}
+	.page_content_left{
+		display: none;
+	}
 }
 /*maps*/
 
