@@ -15,7 +15,7 @@ h1{
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
 	color: white;
-	font-size: 140pt;
+	font-size: 130pt;
 	text-shadow: 0 0 10px white;
 	margin-bottom: 0px;
 }
@@ -36,7 +36,7 @@ h3{
 	font-family: 'Playfair Display', serif;
 	color: white;
 	font-weight: 500;
-	font-size: 30pt;
+	font-size: 25pt;
 }
 
 
@@ -94,12 +94,12 @@ h4{
 #Whole_map_in_grid{
 	grid-area: r;
 	grid-row: span 10;
-	height: 716px;
+	height: 100vh;
 	width: 800px;
 }
 
 #whole_map{
-	width: 100%;
+	width: 80%;
 }
 
 #map_caption{
@@ -291,7 +291,7 @@ h4{
 	width: 90%;
 }
 
-@media(max-width: 1080px){
+@media(max-width: 800px){
 /*	.slide_content{
 		background-size: cover;
 		display: inline-flex;

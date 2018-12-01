@@ -21,7 +21,7 @@ var frameCount1 = 90;
 var currentImage1 = 0;
 
 function getPath1() {
-    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment_7/website_code/assets/gif/wholeIsland/"+ currentImage1 +".png";
+    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment_7/website_code/assets/img/gif/wholeIsland/"+ currentImage1 +".png";
 }
 
 map1.on('load', function() {
@@ -64,7 +64,7 @@ var frameCount2 = 36;
 var currentImage2 = 0;
 
 function getPath2() {
-    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment_7/website_code/assets/gif/rek2vik/"+currentImage2+".png";
+    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment_7/website_code/assets/img/gif/rek2vik/"+currentImage2+".png";
 }    
 
 map2.on('load', function() {
@@ -148,7 +148,7 @@ var frameCount = 5;
 var currentImage = 0;
 
 function getPath4() {
-    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment%207/website_code/assets/gif/rek2vik/rek-to-vik_0000_Layer-35.png";
+    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment_7/website_code/assets/img/gif/rek2vik/rek-to-vik_0000_Layer-35.png";
 }
 
 // map.on('load', function() {
