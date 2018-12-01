@@ -10,14 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- script -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="script/main.js"></script>
+      <script type="text/javascript" src="assets/script/jquery.panorama_viewer.js"></script>
+      <script type="text/javascript" src="assets/script/jquery.panorama_viewer.min.js"></script>
+      <script src="assets/script/main.js"></script>
 
     <!-- styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style_test.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style_test.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-
     <!-- parallax https://www.w3schools.com/howto/howto_css_parallax.asp -->
 
 
@@ -28,12 +29,12 @@
 <div class="top_bar">
   <h4>Lost in Iceland</h4>
 </div>
-<div class="vertical_bar_top">
+<!-- <div class="vertical_bar_top">
 	<div class="blue_bar"></div>
 	<div class="blue_arrow"></div>
 	<div class="tracker_text">
 		<span class="tracker">0 mi <span class="tracker_end"> / 971 mi</span></span>
-	</div>
+	</div> -->
 </div>
 
   <section class="parallax">
@@ -41,11 +42,11 @@
       <h4>Lost in Iceland</h4>
     </div>
     <div class="vertical_bar_top">
-      <div class="blue_bar" data-1432="height:140px;" data-end="height:716px;"></div>
+      <div class="blue_bar" data-1432="height:0px;" data-end="height:716px;"></div>
       <div class="blue_arrow"></div>
-      <div class="tracker_text">
+      <!-- <div class="tracker_text">
         <span class="tracker">0 mi <span class="tracker_end"> / 971 mi</span></span>
-     </div>
+     </div> -->
     </div>
     <div class="slide_content" id="cover">
       <div id="cover_text">
@@ -60,7 +61,7 @@
 	    <h1 id="cover_text_1">Lost In<br>ICELAND</h1>
         <h3 id="cover_text_2">a 6-day road trip around Iceland</h3>
         <p id="cover_text_3">Scroll To Explore</p>
-        <img id="cover_text_4" src="assets/1-arrow.png">
+        <img id="cover_text_4" src="assets/img/1-arrow.png">
       </div>
     </div>
     <div class="slide_content_map" id ="main_map">
@@ -88,7 +89,7 @@
 	      </div>
 	      <div class="page_content">
 	        <div class="page_content_left">
-	          <img id="church" src="assets/3-rek.png">
+	          <img id="church" src="assets/img/3-rek.png">
 	        </div>
 	        <div class="page_content_right">
 	          <H3>The Origin: Reykjavík</H3>
@@ -100,16 +101,16 @@
 
 	            <div class="row">
 				  <div class="column">
-				    <img src="assets/3-lightbox-1.jpg" style="width:100%" onclick="openModal();currentSlide(1); console.log('works');" class="hover-shadow cursor">
+				    <img src="assets/img/3-lightbox-1.jpg" style="width:100%" onclick="openModal();currentSlide(1); console.log('works');" class="hover-shadow cursor">
 				  </div>
 				  <div class="column">
-				    <img src="assets/3-lightbox-2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				    <img src="assets//img/3-lightbox-2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 				  </div>
 				  <div class="column">
-				    <img src="assets/3-lightbox-3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				    <img src="assets/img/3-lightbox-3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 				  </div>
 				  <div class="column">
-				    <img src="assets/3-lightbox-4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				    <img src="assets/img/3-lightbox-4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
 				  </div>
 				</div>
 
@@ -119,22 +120,22 @@
 
 				    <div class="mySlides">
 				      <div class="numbertext">1 / 4</div>
-				      <img src="assets/3-lightbox-1.jpg" style="width:100%">
+				      <img src="assets/img/3-lightbox-1.jpg" style="width:100%">
 				    </div>
 
 				    <div class="mySlides">
 				      <div class="numbertext">2 / 4</div>
-				      <img src="assets/3-lightbox-2.jpg" style="width:100%">
+				      <img src="assets/img/3-lightbox-2.jpg" style="width:100%">
 				    </div>
 
 				    <div class="mySlides">
 				      <div class="numbertext">3 / 4</div>
-				      <img src="assets/3-lightbox-3.jpg" style="width:100%">
+				      <img src="assets/img/3-lightbox-3.jpg" style="width:100%">
 				    </div>
 				    
 				    <div class="mySlides">
 				      <div class="numbertext">4 / 4</div>
-				      <img src="assets/3-lightbox-4.jpg" style="width:100%">
+				      <img src="assets/img/3-lightbox-4.jpg" style="width:100%">
 				    </div>
 				    
 				    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -143,21 +144,6 @@
 				    <div class="caption-container">
 				      <p id="caption"></p>
 				    </div>
-
-				    <div class="row">
-					    <div class="column">
-					      <img class="demo cursor" src="assets/3-lightbox-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Harpa Concert Hall">
-					    </div>
-					    <div class="column">
-					      <img class="demo cursor" src="assets/3-lightbox-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Reykjavík Rooftop">
-					    </div>
-					    <div class="column">
-					      <img class="demo cursor" src="assets/3-lightbox-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="View of Reykjavík From Top of Hallgrímskirkja">
-					    </div>
-					    <div class="column">
-					      <img class="demo cursor" src="assets/3-lightbox-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Streets of Reykjavík">
-					    </div>
-					  </div>
 				  </div>
 				</div>
 	          </div>
@@ -171,6 +157,7 @@
         <dir id="rek_vik_line"></dir>
       </div>
     </div>
+
     <div class="slide_content" id="vik">
     	<div class="transparency" data-768-top="opacity:1;" data-top="opacity:0;"></div>
       <div class="vertical_bar"></div>
@@ -180,7 +167,7 @@
             
           </div>
           <div class="itinery_box">
-            <img src="assets/gif/rek2vik/35.png" class="thumbnailRoute"> 
+            <img src="assets/img/gif/rek2vik/35.png" class="thumbnailRoute"> 
             <p class="bold_p">Day 2</p>
             <p>Milleage: 132 miles (212km)<br>
               Driving Time: 3h 32min<br>
@@ -191,8 +178,8 @@
           <p class="bold_p">Reykjavík to Vík</p>
           <h3>Towards the Black Beach</h3>
           <div class="white_bar"></div>
-          <p>Our trip starts from  </p>
-          <!-- video -->
+          <p>Leaving Reykjavík we head to the south coast towards Vík. Vík is the southernmost village in Iceland, famous for it's black sand beach Dyrholaey.The white foamy was wash up onto the pitch black vocano sand, is truely a sight that you don't see any where else.</p>
+          <img class="right_asset" src="assets/img/5-vik-1.jpg">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
           <!-- pictures -->
         </div>
@@ -214,7 +201,7 @@
             <!-- <img> route line -->
           </div>
           <div class="itinery_box">
-            <img src="assets/gif/vik2hof.png" class="thumbnailRoute"> 
+            <img src="assets/img/gif/vik2hof.png" class="thumbnailRoute"> 
             <p class="bold_p">Day 3</p>
             <p>Milleage: 171 miles (276km)<br>
               Driving Time: 3h 15min<br>
@@ -226,7 +213,7 @@
           <h3>The Warmest Coast</h3>
           <div class="white_bar"></div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-          <!-- video -->
+          <img id="hof_pan" src="assets/img/7-hof-pan.jpg">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
           <!-- pictures -->
         </div>
@@ -248,7 +235,7 @@
             <!-- <img> route line -->
           </div>
           <div class="itinery_box" id="itinery_box_be">
-            <img src="assets/gif/hof2be.png" class="thumbnailRoute" id="thumbnailRouteBe"> 
+            <img src="assets/img/gif/hof2be.png" class="thumbnailRoute" id="thumbnailRouteBe"> 
             <p class="bold_p">Day 4</p>
             <p>Milleage: 197 miles (317km)<br>
               Driving Time: 4h<br>
@@ -282,7 +269,7 @@
             <!-- <img> route line -->
           </div>
           <div class="itinery_box">
-            <img src="assets/gif/be2ak.png" class="thumbnailRoute" id="thumbnailRouteAk"> 
+            <img src="assets/img/gif/be2ak.png" class="thumbnailRoute" id="thumbnailRouteAk"> 
             <p class="bold_p">Day 5</p>
             <p>Milleage: 231 miles (372km)<br>
               Driving Time: 5h 2min<br>
@@ -313,7 +300,7 @@
             <!-- <img> route line -->
           </div>
           <div class="itinery_box" id="itinery_box_rek">
-            <img src="assets/gif/ak2rek.png" class="thumbnailRoute" id="thumbnailRouteRek"> 
+            <img src="assets/img/gif/ak2rek.png" class="thumbnailRoute" id="thumbnailRouteRek"> 
             <p class="bold_p">Day 6</p>
             <p>Milleage: 240 miles (386km)<br>
               Driving Time: 4h 44min<br>
@@ -331,7 +318,7 @@
         </div>
       </div>
     </div>
-  </section>
+    </section>
 <!--     <div class="row" id="homePageContainer">
 	   <div class="col-lg-12" id="homePageBG"><img  class="img-fluid" alt="Responsive image" id="BG" src="assets/1-background.png"></div>
 	   <div class="col-lg-12" id="homePageContent">
@@ -343,7 +330,7 @@
     </div> -->
 
     <!--Calling the Skrollr Library https://github.com/Prinzhorn/skrollr-->
-    <script type="text/javascript" src="script/skrollr.min.js"></script>
+    <script type="text/javascript" src="assets/script/skrollr.min.js"></script>
     <script type="text/javascript">
     var s = skrollr.init();
     var slideIndex = 1;
@@ -355,5 +342,37 @@
     	document.getElementById('myModal').style.display = "none";
     }
 
+      function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+      function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+   slides[slideIndex-1].style.display = "block";
+
+    // dots[slideIndex-1].className += " active";
+    // captionText.innerHTML = dots[slideIndex-1].alt;
+  }
     </script> 
+
 </body>

@@ -4,46 +4,6 @@
  // light box
 $(document).ready(function(){
 
-  function openModal() {
-    document.getElementById('myModal').style.display = "block";
-  }
-
-  function closeModal() {
-    document.getElementById('myModal').style.display = "none";
-  }
-
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-   slides[slideIndex-1].style.display = "block";
-
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-  }
 
 
 // map
@@ -134,13 +94,13 @@ map2.on('load', function() {
     }, 100);
   });
 
-// // map vik hof
-// var map = new mapboxgl.Map({
-//   container: 'map_vik_hof',
-//     style: 'mapbox://styles/brilliantkin/cjonueman0dja2rmtbs5s349s',
-//     zoom: 7,
-//     center: [-16.785, 64.031]
-// });
+// map vik hof
+var map = new mapboxgl.Map({
+  container: 'map_vik_hof',
+    style: 'mapbox://styles/brilliantkin/cjonueman0dja2rmtbs5s349s',
+    zoom: 7,
+    center: [-16.785, 64.031]
+});
 
 // var frameCount = 5;
 // var currentImage = 0;
@@ -176,20 +136,20 @@ map2.on('load', function() {
 //     }, 300);
 //   });
 
-// // map hof be
-// var map = new mapboxgl.Map({
-//   container: 'map_hof_be',
-//     style: 'mapbox://styles/brilliantkin/cjonueman0dja2rmtbs5s349s',
-//     zoom: 7,
-//     center: [-13.64512, 64.94192]
-// });
+// map hof be
+var map = new mapboxgl.Map({
+  container: 'map_hof_be',
+    style: 'mapbox://styles/brilliantkin/cjonueman0dja2rmtbs5s349s',
+    zoom: 7,
+    center: [-13.64512, 64.94192]
+});
 
-// var frameCount = 5;
-// var currentImage = 0;
+var frameCount = 5;
+var currentImage = 0;
 
-// function getPath4() {
-//     return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment%207/website_code/assets/gif/rek2vik/rek-to-vik_0000_Layer-35.png";
-// }
+function getPath4() {
+    return "https://raw.githubusercontent.com/Xi-Jin/puilab/master/Assignment%207/website_code/assets/gif/rek2vik/rek-to-vik_0000_Layer-35.png";
+}
 
 // map.on('load', function() {
 
@@ -218,13 +178,13 @@ map2.on('load', function() {
 //     }, 300);
 //   });
 
-// // map be ak
-// var map = new mapboxgl.Map({
-//   container: 'map_be_ak',
-//     style: 'mapbox://styles/brilliantkin/cjonueman0dja2rmtbs5s349s',
-//     zoom: 7,
-//     center: [-16.39383, 65.62130]
-// });
+// map be ak
+var map = new mapboxgl.Map({
+  container: 'map_be_ak',
+    style: 'mapbox://styles/brilliantkin/cjonueman0dja2rmtbs5s349s',
+    zoom: 7,
+    center: [-16.39383, 65.62130]
+});
 
 // var frameCount = 5;
 // var currentImage = 0;
@@ -260,13 +220,13 @@ map2.on('load', function() {
 //     }, 300);
 //   });
 
-// // map ak rek
-// var map = new mapboxgl.Map({
-//   container: 'map_ak_rek',
-//     style: 'mapbox://styles/brilliantkin/cjonueman0dja2rmtbs5s349s',
-//     zoom: 7,
-//     center: [-20.22400, 64.97565]
-// });
+// map ak rek
+var map = new mapboxgl.Map({
+  container: 'map_ak_rek',
+    style: 'mapbox://styles/brilliantkin/cjonueman0dja2rmtbs5s349s',
+    zoom: 7,
+    center: [-20.22400, 64.97565]
+});
 
 // var frameCount = 5;
 // var currentImage = 0;
