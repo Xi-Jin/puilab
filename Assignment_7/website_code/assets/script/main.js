@@ -17,7 +17,7 @@ var map1 = new mapboxgl.Map({
     center: [-18.846, 64.952]
 });
 
-var frameCount1 = 90;
+var frameCount1 = 90; 
 var currentImage1 = 0;
 
 function getPath1() {
