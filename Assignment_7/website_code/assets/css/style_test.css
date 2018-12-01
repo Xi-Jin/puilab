@@ -41,9 +41,10 @@ h3{
 
 
 #cover{
-	height: 718px;
-	width:100%;
+	height: 100vh;
+	width:100vw;
 	background-image: url(../img/1-background.png);
+	background-size: cover;
 }
 
 /*top bar*/
@@ -83,7 +84,7 @@ h4{
 /*map*/
 .slide_content_map{
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	display: grid;
 	grid-row: repeat(12, 1fr);
 	grid-template-areas: 
@@ -99,7 +100,6 @@ h4{
 
 #whole_map{
 	width: 100%;
-	height: auto;
 }
 
 #map_caption{
@@ -109,10 +109,26 @@ h4{
 	padding-right: 10%;
 }
 
+@media(max-width: 800px){
+	.slide_content_map{
+		display: inline-flex;
+	}
+	.slide_content{
+		background-size: cover;
+		display: inline-flex;
+	}
+	.vertical_bar{
+		display: none;
+	}
+	.page_content_left{
+		display: none;
+	}
+}
+
 /*destination page*/
 .slide_content{
-	height: 718px;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	background-repeat: no-repeat; 
 	display: grid;
 	grid-row: repeat(12, 1fr);
