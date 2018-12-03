@@ -386,6 +386,11 @@ h4{
   background-color: black;
 }
 
+@media(max-width: 800px){
+	width:100vw;
+	height:100vh;
+}
+
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -418,7 +423,6 @@ h4{
   height: 50%;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .cursor {
